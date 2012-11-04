@@ -3,7 +3,7 @@
 
 	<groupId>fr.hoteia.qalingo</groupId>
 	<artifactId>qalingo-b2c-solr</artifactId>
-	<version>0.7.0-SNAPSHOT</version>
+	<version>0.7.0</version>
 	<packaging>pom</packaging>
 	<name>qalingo-b2c-solr</name>
 	<description>{Q} Commerce Solution Project</description>
@@ -18,7 +18,8 @@
 		<connection>scm:git:git@github.com:qalingo/qalingo-b2c-solr.git</connection>
 		<developerConnection>scm:git:git@github.com:qalingo/qalingo-b2c-solr.git</developerConnection>
 		<url>scm:git:git@github.com:qalingo/qalingo-b2c-solr.git</url>
-	</scm>
+	  <tag>qalingo-b2c-solr-0.7.0</tag>
+  </scm>
 	
 	<properties>
 		<root.basedir>${project.basedir}</root.basedir> 
