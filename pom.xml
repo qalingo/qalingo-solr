@@ -23,7 +23,7 @@
 	
 	<properties>
 		<root.basedir>${project.basedir}</root.basedir> 
-		<qalingo.engine.version>0.7.0</qalingo.engine.version> 
+		<qalingo.engine.version>0.7.1-SNAPSHOT</qalingo.engine.version> 
 	</properties>
 	
 	<build>
