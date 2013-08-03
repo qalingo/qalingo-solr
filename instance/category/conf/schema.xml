@@ -46,6 +46,7 @@
 		<field name="id"			type="long"	        indexed="true"  stored="true"  multiValued="false" required="true" />
 		<field name="lastname"		type="string"       indexed="true"  stored="true"  multiValued="false" />
 		<field name="text"			type="text_general" indexed="true"  stored="false" multiValued="true" />
+		<field name="_version_" 	type="long" 		indexed="true" 	stored="true"/>
    </fields>
 
 	<!-- field to use to determine and enforce document uniqueness. -->
