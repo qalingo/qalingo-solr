@@ -18,8 +18,8 @@
 		<connection>scm:git:git@github.com:qalingo/qalingo-b2c-solr.git</connection>
 		<developerConnection>scm:git:git@github.com:qalingo/qalingo-b2c-solr.git</developerConnection>
 		<url>scm:git:git@github.com:qalingo/qalingo-b2c-solr.git</url>
-	  <tag>HEAD</tag>
-  </scm>
+		<tag>HEAD</tag>
+	</scm>
 	
 	<properties>
 		<root.basedir>${project.basedir}</root.basedir> 
@@ -71,6 +71,25 @@
 					</execution>
 				</executions>
 			</plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+					<execution>
+						<id>unpack-shared-resources</id>
+						<goals>
+							<goal>unpack-dependencies</goal>
+						</goals>
+						<phase>generate-resources</phase>
+						<configuration>
+							<outputDirectory>${project.build.directory}/generated-resources</outputDirectory>
+							<includeArtifactIds>qalingo-common-shared-configuration</includeArtifactIds>
+							<includeGroupIds>${project.groupId}</includeGroupIds>
+							<excludeTransitive>true</excludeTransitive>
+						</configuration>
+					</execution>
+				</executions>
+            </plugin>
 		</plugins>
 		<extensions> 
 			<extension> 
