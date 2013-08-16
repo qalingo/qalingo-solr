@@ -1,1 +1,11 @@
-/.project
+.settings
+.classpath
+.project
+target
+pom.xml.releaseBackup
+release.properties
+/data/category
+/data/customer
+/data/product
+/data/store
+
