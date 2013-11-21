@@ -29,8 +29,9 @@
     If 'null' (or absent), cores will not be manageable via request handler
   -->
 	<cores adminPath="/admin/cores">
-		<core name="product" instanceDir="${solr.home.dir}/instance/product" />
-		<core name="category" instanceDir="${solr.home.dir}/instance/category" />
+		<core name="product-marketing" instanceDir="${solr.home.dir}/instance/product-marketing" />
+		<core name="product-sku" instanceDir="${solr.home.dir}/instance/product-sku" />
+		<core name="catalog-category" instanceDir="${solr.home.dir}/instance/catalog-category" />
 		<core name="customer" instanceDir="${solr.home.dir}/instance/customer" />
 		<core name="store" instanceDir="${solr.home.dir}/instance/store" />
 	</cores>

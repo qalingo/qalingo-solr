@@ -44,9 +44,15 @@
 	<fields>
 		<!-- general -->
 		<field name="id"			type="long"	        indexed="true"  stored="true"  multiValued="false" required="true" />
-		<field name="lastname"		type="string"       indexed="true"  stored="true"  multiValued="false" />
+		<field name="businessname"	type="string"       indexed="true"  stored="true"  multiValued="false" />
+		<field name="city"			type="string"       indexed="true"  stored="true"  multiValued="false" />
+		<field name="countrycode"	type="string"       indexed="true"  stored="true"  multiValued="false" />
+		<field name="postalcode"	type="string"       indexed="true"  stored="true"  multiValued="false" />
+		<field name="type"			type="string"       indexed="true"  stored="true"  multiValued="false" />
 		<field name="text"			type="text_general" indexed="true"  stored="false" multiValued="true" />
 		<field name="_version_" 	type="long" 		indexed="true" 	stored="true"/>
+		<field name="datecreate"	type="date"			indexed="true"  stored="true"  multiValued="false" />
+		<field name="dateupdate"	type="date"			indexed="true"  stored="true"  multiValued="false" />
    </fields>
 
 	<!-- field to use to determine and enforce document uniqueness. -->
@@ -55,7 +61,10 @@
 	<!-- field for the QueryParser to use when an explicit fieldname is absent -->
 	<defaultSearchField>text</defaultSearchField>
 
-	<copyField source="lastname" dest="text" />
+	<copyField source="businessname" dest="text" />
+	<copyField source="city" dest="text" />
+	<copyField source="countrycode" dest="text" />
+	<copyField source="postalcode" dest="text" />
    
 	<!-- SolrQueryParser configuration: defaultOperator="AND|OR" -->
 	<solrQueryParser defaultOperator="OR" />

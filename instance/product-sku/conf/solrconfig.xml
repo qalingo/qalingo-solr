@@ -27,11 +27,11 @@
         solr.RAMDirectoryFactory is memory based, not persistent, and doesn't work with replication. -->
   <directoryFactory name="DirectoryFactory" class="${solr.directoryFactory:solr.StandardDirectoryFactory}"/>
 
-  <dataDir>${solr.data.dir}/product/</dataDir>
+  <dataDir>${solr.data.dir}/product-sku/</dataDir>
 
   <updateHandler class="solr.DirectUpdateHandler2">
     <updateLog>
-      <str name="dir">${solr.data.dir}/product/</str>
+      <str name="dir">${solr.data.dir}/product-sku/</str>
     </updateLog>
   </updateHandler>
 
