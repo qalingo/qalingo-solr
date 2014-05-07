@@ -3,7 +3,7 @@
 
 	<groupId>org.hoteia.qalingo</groupId>
 	<artifactId>qalingo-solr</artifactId>
-	<version>0.8.0</version>
+	<version>0.8.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>qalingo-solr</name>
 	<description>{Q} Commerce Solution Project</description>
@@ -18,7 +18,7 @@
 		<connection>scm:git:git@github.com:qalingo/qalingo-solr.git</connection>
 		<developerConnection>scm:git:git@github.com:qalingo/qalingo-solr.git</developerConnection>
 		<url>scm:git:git@github.com:qalingo/qalingo-solr.git</url>
-		<tag>qalingo-solr-0.8.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 	
 	<properties>
