@@ -58,6 +58,7 @@
 		<field name="description"			type="string"   	indexed="true"  stored="true"  multiValued="false" />
 		<field name="catalogCode"			type="string"		indexed="true" 	stored="true"  multiValued="true" />
 		<field name="defaultCategoryCode"	type="string"   	indexed="true"  stored="true"  multiValued="false" />
+		<field name="catalogCategories"		type="string"		indexed="true"  stored="true"  multiValued="true" />
 
 		<field name="datecreate"			type="date"			indexed="true"  stored="true"  multiValued="false" />
 		<field name="dateupdate"			type="date"			indexed="true"  stored="true"  multiValued="false" />
