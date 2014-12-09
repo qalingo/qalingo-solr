@@ -61,6 +61,7 @@
 		<field name="catalogCode"			type="string"		indexed="true" 	stored="true"  multiValued="true" />
 		<field name="defaultCategoryCode"	type="string"   	indexed="true"  stored="true"  multiValued="false" />
 		<field name="catalogCategories"		type="string"		indexed="true"  stored="true"  multiValued="true" />
+		<field name="tags"		            type="string"		indexed="true"  stored="true"  multiValued="true" />
 		
 		<field name="datecreate"			type="date"			indexed="true"  stored="true"  multiValued="false" />
 		<field name="dateupdate"			type="date"			indexed="true"  stored="true"  multiValued="false" />
@@ -87,7 +88,8 @@
 	<copyField source="price"				dest="text" />
 	<copyField source="defaultCategoryCode"	dest="text" />
 	<copyField source="catalogCategories"	dest="text" />
-   
+   	<copyField source="tags"			    dest="text" />
+	
 	<!-- SolrQueryParser configuration: defaultOperator="AND|OR" -->
 	<solrQueryParser defaultOperator="OR" />
 </schema>

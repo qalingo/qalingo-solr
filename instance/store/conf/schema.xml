@@ -52,6 +52,9 @@
 		<field name="type"			type="string"       indexed="true"  stored="true"  multiValued="false" />
 		<field name="text"			type="text_general" indexed="true"  stored="false" multiValued="true" />
 		<field name="_version_" 	type="long" 		indexed="true" 	stored="true"/>
+		
+		<field name="tags"		            type="string"		indexed="true"  stored="true"  multiValued="true" />
+
 		<field name="datecreate"	type="date"			indexed="true"  stored="true"  multiValued="false" />
 		<field name="dateupdate"	type="date"			indexed="true"  stored="true"  multiValued="false" />
    </fields>
@@ -67,6 +70,7 @@
 	<copyField source="city"		dest="text" />
 	<copyField source="countrycode"	dest="text" />
 	<copyField source="postalcode"	dest="text" />
+	<copyField source="tags"	    dest="text" />
    
 	<!-- SolrQueryParser configuration: defaultOperator="AND|OR" -->
 	<solrQueryParser defaultOperator="OR" />
