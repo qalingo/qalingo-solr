@@ -58,6 +58,7 @@
 		<field name="name"					type="string"       indexed="true"  stored="true"  multiValued="false" />
 		<field name="description"			type="string"   	indexed="true"  stored="true"  multiValued="false" />
 
+        <field name="enabledToB2B"          type="boolean"      indexed="true"  stored="true"  multiValued="false" />
         <field name="enabledToB2C"          type="boolean"      indexed="true"  stored="true"  multiValued="false" />
 
 		<field name="productBrandCode"      type="string"		indexed="true" 	stored="true"  multiValued="false" />
